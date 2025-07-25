@@ -1,0 +1,1 @@
+Warning (10268): Verilog HDL information at master.v(36): always construct contains both blocking and non-blocking assignments File: /home/samuel/Documentos/Sem_6/Digital/Proyecto 2/JASPI-Proyecto-Digital/Arquitectura_Digital/master.v Line: 36

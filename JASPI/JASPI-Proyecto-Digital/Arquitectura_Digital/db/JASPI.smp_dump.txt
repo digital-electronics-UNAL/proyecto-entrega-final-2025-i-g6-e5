@@ -1,0 +1,35 @@
+
+State Machine - |top|BCD:BCD|algo
+Name algo.01 
+algo.00 0 
+algo.01 1 
+
+State Machine - |top|listen:listen|state
+Name state.ANNO state.MES state.FECHA state.DIA state.HORA state.MIN state.SEG state.IDLE state.ACK 
+state.IDLE 0 0 0 0 0 0 0 0 0 
+state.SEG 0 0 0 0 0 0 1 1 0 
+state.MIN 0 0 0 0 0 1 0 1 0 
+state.HORA 0 0 0 0 1 0 0 1 0 
+state.DIA 0 0 0 1 0 0 0 1 0 
+state.FECHA 0 0 1 0 0 0 0 1 0 
+state.MES 0 1 0 0 0 0 0 1 0 
+state.ANNO 1 0 0 0 0 0 0 1 0 
+state.ACK 0 0 0 0 0 0 0 1 1 
+
+State Machine - |top|master:master|st_prev
+Name st_prev.Listen st_prev.Send_Reg st_prev.Send_Add st_prev.Default st_prev.Restart 
+st_prev.Default 0 0 0 0 0 
+st_prev.Send_Add 0 0 1 1 0 
+st_prev.Send_Reg 0 1 0 1 0 
+st_prev.Restart 0 0 0 1 1 
+st_prev.Listen 1 0 0 1 0 
+
+State Machine - |top|master:master|state
+Name state.Wait state.Listen state.Send_Reg state.Stretch state.Send_Add state.Start state.Default 
+state.Default 0 0 0 0 0 0 0 
+state.Start 0 0 0 0 0 1 1 
+state.Send_Add 0 0 0 0 1 0 1 
+state.Stretch 0 0 0 1 0 0 1 
+state.Send_Reg 0 0 1 0 0 0 1 
+state.Listen 0 1 0 0 0 0 1 
+state.Wait 1 0 0 0 0 0 1 

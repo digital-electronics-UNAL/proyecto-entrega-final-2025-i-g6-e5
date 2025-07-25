@@ -1,0 +1,13 @@
+Nombre,Unidad,Expresión,Valor,Comentarios,Favorito
+Espesor,mm,7 mm,7.00,,false
+largoFPGA,mm,120 mm,120.00,,false
+anchoFPGA,mm,95 mm,95.00,,false
+cable1,mm,5 mm,5.00,,false
+cable2,mm,6 mm,6.00,,false
+Cilindro,mm,sqrt(( anchoFPGA + 4 mm ) ^ 2 + ( largoFPGA + 4 mm ) ^ 2),158.673,,false
+largoSSCD,mm,35.8 mm,35.80,,false
+anchoSSCD,mm,106.4 mm,106.40,,false
+DimLed,mm,3 mm,3.00,,false
+Sep,mm,5 mm,5.00,,false
+CilindroSS,mm,sqrt(( anchoSSCD + Sep * 2 ) ^ 2 + ( anchoSSCD + Sep * 2 ) ^ 2),164.614,,false
+altSSCD,mm,20 mm,20.00,,false

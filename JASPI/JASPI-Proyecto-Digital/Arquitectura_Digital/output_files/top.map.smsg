@@ -1,0 +1,3 @@
+Warning (10268): Verilog HDL information at listen.v(69): always construct contains both blocking and non-blocking assignments File: /home/samuel/Documentos/Sem_6/Digital/Proyecto 2/JASPI-Proyecto-Digital/RTC_Analisis/listen.v Line: 69
+Info (10281): Verilog HDL Declaration information at top.v(12): object "bcd" differs only in case from object "BCD" in the same scope File: /home/samuel/Documentos/Sem_6/Digital/Proyecto 2/JASPI-Proyecto-Digital/RTC_Analisis/top.v Line: 12
+Warning (10268): Verilog HDL information at master.v(36): always construct contains both blocking and non-blocking assignments File: /home/samuel/Documentos/Sem_6/Digital/Proyecto 2/JASPI-Proyecto-Digital/RTC_Analisis/master.v Line: 36

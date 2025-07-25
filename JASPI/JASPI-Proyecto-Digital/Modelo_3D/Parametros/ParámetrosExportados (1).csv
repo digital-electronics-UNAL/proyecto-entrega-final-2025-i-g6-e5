@@ -1,0 +1,7 @@
+Nombre,Unidad,Expresión,Valor,Comentarios,Favorito
+Espesor,mm,7 mm,7.00,,false
+largoFPGA,mm,76.5 mm,76.50,,false
+anchoFPGA,mm,69 mm,69.00,,false
+cable1,mm,5 mm,5.00,,false
+cable2,mm,6 mm,6.00,,false
+Cilindro,mm,sqrt(( anchoFPGA + 4 mm ) ^ 2 + ( largoFPGA + 4 mm ) ^ 2),108.67,,false

@@ -1,0 +1,47 @@
+module BCD #(parameter Maxcount = 200000)(
+    input [7:0] Seconds,  
+    input clk,
+    output reg [3:0] bcd,
+    output reg [3:0] c
+  );
+  // maxcount 200000 para quartus || 25 para test
+  //reg  algo = 0; esto se cambia por el rst
+  reg [1:0]algo;
+  reg [$clog2(Maxcount):0] count;
+  reg clk2;
+  initial begin
+		algo <= 2'b00;
+		c <= 'b0;
+    bcd <= 0;
+    count <= 0;
+  end
+  
+  initial begin
+    clk2 = 0;
+  end
+
+  always @(posedge clk) begin
+    if (count == Maxcount) begin
+      count <= 0;
+      clk2 <= ~clk2;
+    end else begin
+      count <= count +1;
+    end
+  end
+
+
+  always@(posedge clk2) begin
+      case(algo)
+        0:begin
+			 	 bcd<=4'b0111;//Seconds[3:0];
+				 algo <= 1;
+				 c <= 4'b1110;
+          end
+        1:begin
+          bcd<=4'b0101;//Seconds[7:4];
+          algo <= 0;
+			   c <= 4'b1101;
+          end
+      endcase
+  end
+endmodule

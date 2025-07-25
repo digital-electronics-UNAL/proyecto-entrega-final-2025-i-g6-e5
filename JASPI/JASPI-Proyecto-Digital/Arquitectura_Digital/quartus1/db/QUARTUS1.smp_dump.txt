@@ -1,0 +1,18 @@
+
+State Machine - |top|master:master|st_prev
+Name st_prev.Listen st_prev.Send_Reg st_prev.Send_Add st_prev.Default st_prev.Restart 
+st_prev.Default 0 0 0 0 0 
+st_prev.Send_Add 0 0 1 1 0 
+st_prev.Send_Reg 0 1 0 1 0 
+st_prev.Restart 0 0 0 1 1 
+st_prev.Listen 1 0 0 1 0 
+
+State Machine - |top|master:master|state
+Name state.Wait state.Listen state.Send_Reg state.Stretch state.Send_Add state.Start state.Default 
+state.Default 0 0 0 0 0 0 0 
+state.Start 0 0 0 0 0 1 1 
+state.Send_Add 0 0 0 0 1 0 1 
+state.Stretch 0 0 0 1 0 0 1 
+state.Send_Reg 0 0 1 0 0 0 1 
+state.Listen 0 1 0 0 0 0 1 
+state.Wait 1 0 0 0 0 0 1 
