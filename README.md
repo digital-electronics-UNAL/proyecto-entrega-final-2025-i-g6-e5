@@ -4,7 +4,7 @@ Este repositorio es parte de la entrega final para el curso de Electrónica Digi
 
 Todo el desarrollo, código y documentación del proyecto fue trabajado en el siguiente repositorio:
 
-🔗 [Repositorio original del proyecto: JASPI-Proyecto-Digital](https://github.com/Snegunal/JASPI-Proyecto-Digital)
+[Repositorio original del proyecto: JASPI-Proyecto-Digital](https://github.com/Snegunal/JASPI-Proyecto-Digital)
 
 Ahí se puede encontrar:
 - Todo el historial de commits
