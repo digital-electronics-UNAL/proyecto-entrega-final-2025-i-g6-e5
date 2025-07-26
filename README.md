@@ -6,6 +6,15 @@ Todo el desarrollo, código y documentación del proyecto fue trabajado en el si
 
 [Repositorio original del proyecto: JASPI-Proyecto-Digital](https://github.com/Snegunal/JASPI-Proyecto-Digital)
 
+
+## Integrantes 
+
+[Samuel David Negrete Lancheros](https://github.com/Snegunal)
+
+[Alessandra Quintero Rois](https://github.com/Alequira)
+
+[Jorge Alejandro Torres Gutierrez](https://github.com/DonTorres01)
+
 Ahí se puede encontrar:
 - Todo el historial de commits
 - El desarrollo completo del sistema
